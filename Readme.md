@@ -1,6 +1,4 @@
-Express Passport Template
-=========================
+Dow Jones Fintech Demo
+======================
 
-Useful for quickly spinning up heroku instances of passport-enabled oauth apps.
-
-Reference .env file: https://gist.github.com/everyplace/5245903
+Useful for quickly spinning up a demo instance of a node.js-based app for consuming http://dowjones.com/api data.
