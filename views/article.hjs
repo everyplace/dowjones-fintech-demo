@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<script src="/javascripts/jquery-latest.js"></script>
+		<script src="/javascripts/jquery.mustache.js"></script>
+		<script src="/javascripts/mustache.js"></script>
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+
+		<!-- {{data.HEADLINE}} -->
+		{{#data.BODY.SECTION}}
+			
+			<section>
+			{{#PARAGRAPH}}
+				{{.}}
+			{{/PARAGRAPH}}
+			</section>
+		{{/data.BODY.SECTION}}
+
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<script src="/javascripts/jquery-latest.js"></script>
+		<script src="/javascripts/jquery.mustache.js"></script>
+		<script src="/javascripts/mustache.js"></script>
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		{{#data.Headlines}}
+		<section class="module headline">
+			<h2><a href="{{DocumentGuidUri}}">{{Headline}}</a></h2>
+			<cite>{{Author}}</cite>
+			<small>{{UpdateTimestamp.Value}}</small>
+			<p>{{Abstract.ABSTRACT.PARAGRAPH.#text}}</p>
+		</section>
+		{{/data.Headlines}}
+	
+	</body>
+</html>

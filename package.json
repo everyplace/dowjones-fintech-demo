@@ -1,0 +1,15 @@
+{
+  "name": "DowJones-Fintech-Demo",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "*",
+    "http":"*",
+    "path":"*",
+    "request":"*",
+    "hjs":"*"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
