@@ -14,7 +14,7 @@
 		<div class="container">
 			{{#data.Headlines}}
 			<section class="module headline">
-				<h2><a href="{{DocumentGuidUri}}">{{Headline}}</a></h2>
+				<h2><a href="/article/{{guid}}">{{Headline}}</a></h2>
 				<cite>{{Author}}</cite>
 				<small>{{UpdateTimestamp.Value}}</small>
 				<p>{{Abstract.ABSTRACT.PARAGRAPH.#text}}</p>

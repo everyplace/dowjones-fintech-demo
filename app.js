@@ -31,6 +31,10 @@ app.get(['/','/headlines'], function(req, res){
   request.get(url, function(err, response, body) {
     var parsedBody = JSON.parse(body);
 
+    var i;
+    for (i = 0; i<parsedBody.Headlines.length; i++) {
+      parsedBody.Headlines[i].guid = parsedBody.Headlines[i].DocumentGuidUri.split('/')[parsedBody.Headlines[i].DocumentGuidUri.split('/').length-1];
+    }
 
     res.render('headlines', {
       title: "Hello, headline module",
