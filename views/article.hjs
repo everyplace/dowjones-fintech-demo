@@ -11,17 +11,15 @@
 		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />		
 	</head>
 	<body>
-
 		<div class="container">
 			<h1>{{data.HEADLINE}}</h1>
-		{{#data.BODY.SECTION}}
-			
+			{{#data.BODY.SECTION}}
 			<section>
 			{{#PARAGRAPH}}
 				<p>{{.}}</p>
 			{{/PARAGRAPH}}
 			</section>
-		{{/data.BODY.SECTION}}
+			{{/data.BODY.SECTION}}
 		</div>
 	</body>
 </html>
