@@ -23,7 +23,7 @@ app.configure('development', function(){
 });
 
 
-app.get('/headlines', function(req, res){
+app.get(['/','/headlines'], function(req, res){
 
   var section = 424
     , url = 'http://betawebapi.dowjones.com/fintech/articles/api/v1/source/'+section+'/?count=20'
